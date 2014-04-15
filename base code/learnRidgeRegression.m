@@ -7,3 +7,9 @@ function w = learnRidgeRegression(X,y,lambda)
 % lambda = scalar
 % Output:
 % w = D x 1
+%(ID + X>X)?1X>y
+D = size(X,2);
+w = (lambda * eye(D) + X'*X)\(X'*y);
+
+
+end

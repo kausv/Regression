@@ -8,7 +8,7 @@ function w = learnOLERegression(X,y)
 % w = D x 1
 D = size(X,2);
 
-w = (X'*X)\(X'*y);
+w = inv(X'X)
 
 % epsilon = sqrt(6) / sqrt(D + 1);
 % w = rand(1, D) * 2* epsilon - epsilon;
